@@ -1,0 +1,18 @@
+Amazon Product Services API using Java.
+
+I'm releasing this to the wild because I found it rather difficult to get Amazon Commerce Services API working.
+In theory you can use Amazon's WSDL to generate Web Service stubs. For various reasons I could not get this to work.
+http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/
+
+So here is a pretty much abandoned REST client (I moved on to other projects) that uses the generated JAXB objects 
+from the WSDL and Commons HTTP Client.
+
+Copy sample.properties to a file called my.properties and add your AWS credentials and your associate tag
+
+To Build:
+
+	ant build
+
+To run the sample:
+
+	ant run
